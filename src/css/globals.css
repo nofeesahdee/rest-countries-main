@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+}
+
+/* 
+[data-theme="dark"] body {
+  background-color: #000;
+  color: #fff;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+/* .light {
+  --bg: white;
+  --textColor: black;
+  --primaryMainColor: #f37335;
+  --primaryAccentColor: #fdc830;
+}
+
+.dark {
+  --bg: #9ab4e4;
+  --textColor: white;
+  --primaryMainColor: #363795;
+  --primaryAccentColor: #005c97;
+} */
