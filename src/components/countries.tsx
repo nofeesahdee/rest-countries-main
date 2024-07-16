@@ -2,6 +2,7 @@
 import { promises as fs } from 'fs';
 import Pagination from './pagination';
 import Link from 'next/link';
+import Image from 'next/image';
 
 async function getCountries(name: string) {
     const res = await fetch(`https://restcountries.com/v3.1/all`, {
@@ -42,7 +43,7 @@ export default async function Countries({
                         return (
                             <div key={data.name} className="w-full h-96 mb-16 shadow-2xl rounded-lg cursor-pointer" >
                                 <Link href={`/details/${data.name}`} >
-                                    <img src={data.flags.png} className="w-full h-40 object-cover rounded-t-lg" alt="country flag" />
+                                    <Image src={data.flags.png} alt="country flag" className='rounded-t-lg w-full h-40' width={500} height={160} />
                                     <div className="p-4">
                                         <h2 className="font-extrabold text-xl py-3">{data.name}</h2>
                                         <div className='pb-1 text-sm'>

@@ -1,8 +1,6 @@
 'use client';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
-
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Pagination(
     { hasNextPage, hasPreviousPage, pages, perPage }:
